@@ -10,30 +10,30 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <header>
-      <div class="container  ">
+      <div class="container header">
         <nav>
           <a href="./index.html" class="logo-header link">
             <span class="logo-accent">Web</span>Studio</a>
 
-          <ul class="list">
-            <li><a href="./index.html" class="nav link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="nav link">Портфоліо</a></li>
-            <li><a href="#contact" class="nav link">Контакти</a></li>
+          <ul class="nav-list list">
+            <li class="item"><a href="./index.html" class="nav link current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="nav link">Портфоліо</a></li>
+            <li class="item"><a href="#contact" class="nav link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list">
-          <li>
+        <ul class="contact-list list">
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="contact link"
               >info@devstudio.com</a>
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="contact link"
               >+380 96 111 11 11</a>
           </li>
@@ -41,13 +41,11 @@
       </div>
     </header>
     <main>
-      <div>
-        <section class="hero">
+        <section class="hero section">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button">Замовити послугу</button>
         </section>
-      </div>
-      <section>
+      <section class="features section">
         <div class="container">
           <h2 class="hidden-header">Особливості</h2>
           <ul class="list">
@@ -81,7 +79,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="work section">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="list">
@@ -115,22 +113,22 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="list">
             <li>
-              <img src="./images/ihor.jpeg" alt="Портрет Ігора" width="270" />
+              <img class="img-team" src="./images/ihor.jpeg" alt="Портрет Ігора" width="270" />
               <h3 class="member-title">Ігор Дем'яненко</h3>
               <p lang="en" class="member-position">Product Designer</p>
             </li>
             <li>
-              <img src="./images/olha.jpeg" alt="Портрет Ольги" width="270" />
+              <img class="img-team" src="./images/olha.jpeg" alt="Портрет Ольги" width="270" />
               <h3 class="member-title">Ольга Рєпіна</h3>
               <p lang="en" class="member-position">Frontend Developer</p>
             </li>
             <li>
-              <img
+              <img class="img-team"
                 src="./images/mykola.jpeg"
                 alt="Портрет Миколи"
                 width="270"/>
@@ -138,7 +136,7 @@
               <p lang="en" class="member-position">Marketing</p>
             </li>
             <li>
-              <img
+              <img class="img-team"
                 src="./images/misha.jpeg"
                 alt="Портрет Михайла"
                 width="270"/>

@@ -38,10 +38,30 @@ body {
 }
 
 .link {
+  display: inline-block;
   text-decoration: none;
 }
 
-/*----------------------Header---------------------- */
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+/* ---------------------Container------------------- */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  border: 2px dashed tomato;
+  
+}
+
+/*----------------------Header Navigation---------------------- */
 
 .logo-header {
   font-family: "Raleway", sans-serif;
@@ -51,13 +71,49 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--logo-black-color);
+
+  /* display: flex;
+  display: block;
+  justify-content:flex-start; */
 }
 
 .logo-accent {
   color: var(--accent-text-color);
 }
 
-/*----------------------Navigation---------------------- */
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.nav-list{
+  display: flex;
+}
+
+.nav-list .item + .item{
+  margin-left: 50px;
+}
+
+.nav-list .link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-list{
+  display: flex;
+}
+
+.contact-list .item + .item{
+  margin-left: 50px;
+}
+
+
+.contact-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav {
   font-weight: 500;
   font-size: 14px;
@@ -66,12 +122,15 @@ body {
   color: var(--primary-text-color);
 }
 
+
 .contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+
+  margin-right: 50px;
 }
 
 .link:hover,
@@ -83,20 +142,28 @@ body {
   color: var(--accent-text-color);
 }
 
-/*----------------------Main - Hero section---------------------- */
+/*---------------------- Main - Hero section---------------------- */
 
 .hero {
+  text-align: center;
   background-color: var(--accent-bcg-color);
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
+
+  margin-bottom: 30px;
+
+  border:2px solid #2196f3;
 }
 
 .hero-button {
@@ -105,10 +172,14 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   color: var(--main-white-color);
   background-color: var(--accent-text-color);
+  
   border: 0;
   cursor: pointer;
+
+  padding: 10px 32px;
 }
 
 /*----------------------Features---------------------- */
@@ -126,6 +197,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -143,11 +216,19 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
+.work.section{
+  padding-top: 0;
+}
 /*----------------------Our team---------------------- */
 .team {
   background-color: var(--grey-bcg-color);
+}
+.img-team{
+  margin-bottom: 30px;
 }
 
 .member-title {
@@ -155,6 +236,8 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
 }
 
 .member-position {
@@ -233,3 +316,4 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+
