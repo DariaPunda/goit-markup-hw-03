@@ -1,0 +1,235 @@
+/* TEXT COLORS 
+main color:#212121;
+p grey color:#757575; 
+accent color:#2196F3;
+logo color: #000000 #FFFFFF #2196F3;
+footer additional adress color:  rgba(255, 255, 255, 0.6); */
+
+/* BACKGROUND COLORS 
+main  background-color: #ffffff;
+grey background-color: #F5F4FA; 
+hero and footer background-color: #2F303A; */
+
+/* FONT FAMILIES  
+main font-family: Roboto, sans-serif;
+logo font-family: 'Raleway', sans-serif; */
+body {
+  background-color: var(--main-white-color);
+  font-family: "Roboto", "Helvetica Neue", "Tahoma", sans-serif;
+  color: var(--primary-text-color);
+}
+
+:root {
+  --main-white-color: #ffffff;
+  --grey-bcg-color: #f5f4fa;
+  --accent-bcg-color: #2f303a;
+
+  --logo-black-color: #000000;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --additional-address-color: rgba(255, 255, 255, 0.6);
+}
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*----------------------Header---------------------- */
+
+.logo-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--logo-black-color);
+}
+
+.logo-accent {
+  color: var(--accent-text-color);
+}
+
+/*----------------------Navigation---------------------- */
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+
+.current {
+  color: var(--accent-text-color);
+}
+
+/*----------------------Main - Hero section---------------------- */
+
+.hero {
+  background-color: var(--accent-bcg-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+}
+
+.hero-button {
+  font-family: "Roboto", "Helvetica Neue", "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-white-color);
+  background-color: var(--accent-text-color);
+  border: 0;
+  cursor: pointer;
+}
+
+/*----------------------Features---------------------- */
+
+.hidden-header {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/*----------------------Section: Our work---------------------- */
+
+.work-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*----------------------Our team---------------------- */
+.team {
+  background-color: var(--grey-bcg-color);
+}
+
+.member-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.member-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/*----------------------Footer---------------------- */
+.footer {
+  background-color: var(--accent-bcg-color);
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--main-white-color);
+}
+
+.address-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  color: var(--main-white-color);
+}
+
+.address-contact {
+  color: var(--additional-address-color);
+}
+
+.address:hover,
+.address:focus,
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--accent-text-color);
+}
+
+/*----------------------Portfolio page styles---------------------- */
+/*----------------------Buttons---------------------- */
+.filter-button {
+  font-family: "Roboto", "Helvetica Neue", "Tahoma", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--primary-text-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--main-white-color);
+}
+
+/*----------------------Main portfolio list----------------------*/
+.main-list-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.main-list-descr {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
