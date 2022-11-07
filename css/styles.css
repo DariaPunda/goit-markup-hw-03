@@ -393,12 +393,12 @@ p {
 .main-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  gap: 30px;
+  border: 2px dashed tomato;
 }
 .main-list .item {
   width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
 }
 
 .item:nth-child(3n) {
