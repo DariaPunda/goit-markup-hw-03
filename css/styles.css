@@ -397,7 +397,7 @@ p {
 }
 .main-list .item {
   width: calc((100% - 60px) / 3);
-  border: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .item:nth-child(3n) {
