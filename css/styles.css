@@ -394,7 +394,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  border: 2px dashed tomato;
 }
 .main-list .item {
   width: calc((100% - 60px) / 3);
