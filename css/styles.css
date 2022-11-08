@@ -92,11 +92,13 @@ img{
   color: var(--accent-text-color);
 }
 
+header{
+border-bottom: 1px solid #ececec;
+}
+
 .header {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -160,13 +162,16 @@ img{
 
 /*---------------------- Main - Hero section---------------------- */
 
-.hero {
+.hero.section{
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--accent-bcg-color);
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  margin: 0 auto;
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -177,6 +182,7 @@ img{
 }
 
 .hero-button {
+  margin-top: 30px;
   padding: 10px 32px;
 
   font-family: "Roboto", "Helvetica Neue", "Tahoma", sans-serif;
@@ -194,8 +200,19 @@ img{
 
 /*----------------------Features---------------------- */
 
-.hidden-header {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
 }
 
 .features-list {
@@ -260,8 +277,10 @@ img{
 .team {
   background-color: var(--grey-bcg-color);
 }
-.img-team {
-  margin-bottom: 30px;
+
+.member{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .member-title {
@@ -274,8 +293,6 @@ img{
 }
 
 .member-position {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -365,26 +382,6 @@ img{
 }
 
 /*----------------------Main portfolio list----------------------*/
-.main-list-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
-  padding-left: 24px;
-
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primary-text-color);
-}
-
-.main-list-descr {
-  margin-bottom: 20px;
-  padding-left: 24px;
-
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
 
 .filter-list {
   display: flex;
@@ -396,6 +393,31 @@ img{
   margin-left: 8px;
 }
 
+.main-text{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+}
+.main-list-title {
+  margin-bottom: 4px;
+ 
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.main-list-descr {
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
 .main-list {
   display: flex;
   flex-wrap: wrap;
@@ -403,7 +425,6 @@ img{
 }
 .main-list .item {
   width: calc((100% - 60px) / 3);
-  border-bottom: 1px solid #EEEEEE;
 }
 
 .item:nth-child(3n) {
