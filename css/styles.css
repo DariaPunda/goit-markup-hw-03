@@ -424,7 +424,7 @@ border-bottom: 1px solid #ececec;
   gap: 30px;
 }
 .main-list .item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .item:nth-child(3n) {
